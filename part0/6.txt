@@ -1,0 +1,10 @@
+note over browser:
+User fills form and presses save
+end note
+note over browser:
+browser starts executing js-code to handle form,
+by appending it to notes list and redraw the list.
+Then the js-code prepares a HTTP POST of the form.
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: Created
