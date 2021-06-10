@@ -5,7 +5,7 @@ const fs = require('fs');
 const cors = require('cors')
 
 const MAXID = 1000000
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 
 let rawdata = fs.readFileSync('db.json');
 let persons = JSON.parse(rawdata).persons;
